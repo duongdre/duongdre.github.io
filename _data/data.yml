@@ -13,10 +13,10 @@ sidebar:
 
     # Sidebar links
     email: duongdre@gmail.com
-    phone: (+84)348 949 696
+    phone: 0348 949 696
     website:  #do not add http://
     linkedin: 
-    github: PVLam
+    github: duongdre
     gitlab:
     bitbucket:
     twitter: ''
@@ -28,13 +28,13 @@ sidebar:
         level: Native
 
       - idiom: English
-        level: Upper Intermediate
+        level: Intermediate
 
       - idiom: Japanese
         level: N4
-
+        
       - idiom: Chinese
-        level: HSK 2
+        level: BSK 2
         
     interests:
       - item: Reading
@@ -43,7 +43,7 @@ sidebar:
       - item: Translating books
         link:
 
-      - item: Paiting
+      - item: Painting
         link:
 
       - item: Traveling
@@ -139,9 +139,9 @@ projects:
       Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
 
     assignments:
-      - title: Frist Static Website
-        link: " https://github.com/duongdre/duongdre.github.io "
-        tagline: "abc"
+      - title: CV
+        link: "https://github.com/duongdre/duongdre.github.io"
+        tagline: ""
 
       - title: 
         link: ""
@@ -203,4 +203,3 @@ skills:
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
-
