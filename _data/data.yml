@@ -3,7 +3,7 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
@@ -19,7 +19,8 @@ sidebar:
     github: duongdre
     gitlab:
     bitbucket:
-    twitter: ''
+    twitter:
+    facebook: facebook.com/BMKDuongDre
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
 
@@ -58,12 +59,6 @@ education:
     - degree: 
       university: Thang Long University
       time: 2017 - present
-      details: |
-        Nghiem Xuan Yem 
-
-    - degree: 
-      university: 
-      time: 
       details: |
 
 experiences:
