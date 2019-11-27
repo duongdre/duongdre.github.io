@@ -33,7 +33,7 @@ sidebar:
       - idiom: Japanese
         level: N4
 
-	- idiom: Chinese
+      - idiom: Chinese
         level: HSK 2
         
     interests:
@@ -45,7 +45,8 @@ sidebar:
 
       - item: Paiting
         link:
-	- item: Traveling
+
+      - item: Traveling
         link:
 
 career-profile:
