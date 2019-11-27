@@ -91,17 +91,20 @@ projects:
 
 publications:
     title: Publications
-    intro: |
+    intro: >
+        There is one thing that I deeply interest of is creating things. I mean, everything I can. That's one of the reasons which led me to Coding.
+        Anyway, beside coding, I also painting and translating books.
+        Here is some of them
 
 
     papers:
-      - title: 
-        authors: 
-        conference: 
+      - title: Book: The 100
+        authors: Kass Morgan
+        conference: [link]
 
-      - title: ""
-        authors: 
-        conference: ""
+      - title: Art: An Asia Woman
+        authors: Duong Dre
+        conference: [link]
 
 skills:
     title: Skills &amp; Proficiency
