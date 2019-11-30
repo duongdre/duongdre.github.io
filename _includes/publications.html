@@ -21,12 +21,15 @@
     <div class="publication-title">{{ publication.title }}</div>
     <div class="publication-authors">{{ publication.authors }}</div>
     <div class="publication-tag">{{ publication.tag }}</div>
-    
-     <span class="publication-tagline">{{ publication.tagline }}</span>
+        
+    <span class="publication-tagline">
+        <a href="{{ publication-tagline }}">{{ publication-tagline }}</a>
+    </span>
     
     {% if publication.tagline %}
-    - <a href="{{ publication.conference }}">{{ publication.tag }}</a>
+     -- <a href="{{ publication.conference }}">{{ publication.tag }}</a>
     {% endif %}
+    
   </div><!--//item-->
   {% endfor %}
 
