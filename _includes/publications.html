@@ -20,7 +20,9 @@
   <div class="item">
     <div class="publication-title">{{ publication.title }}</div>
     <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
+    <span class="project-title">
+        <a href="{{ project.link }}">{{ project.title }}</a>
+    </span>
   </div><!--//item-->
   {% endfor %}
 
