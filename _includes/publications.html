@@ -23,7 +23,11 @@
     
     <span class="publication-tagline">
         <a href="{{ project.conference }}">{{ project.tagline }}</a>
-      </span>
+    </span>
+    
+    {% if publication.tagline %}
+        <span class="publication-tagline">{{ project.tagline }}</span>
+    {% endif %}
     
   </div><!--//item-->
   {% endfor %}
