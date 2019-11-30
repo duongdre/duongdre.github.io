@@ -20,13 +20,13 @@
   <div class="item">
     <div class="publication-title">{{ publication.title }}</div>
     <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-tag">{{ publication.tag }}</div>
-    
-        <a href="{{ publication-tagline }}">{{ publication-tagline }}</a>
     
     {% if publication.tagline %}
-        - <a href="{{ publication.conference }}">{{ publication.tag }}</a>
+        <span class="publication-tagline">{{ publication.tagline }}</span>
     {% endif %}
+    
+        - <a href="{{ publication.conference }}">{{ publication.tag }}</a>
+    
     
   </div><!--//item-->
   {% endfor %}
