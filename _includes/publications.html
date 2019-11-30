@@ -25,9 +25,7 @@
       <span class="publication-tagline">{{ publication.tagline }}</span>
     {% endif %}
     
-    <span class="publication-conference">
-       - <a href="{{ publication.conference }}">{{ publication.tagline }}</a>
-    </span>
+    <a href="{{ publication.conference }}">{{ publication.tagline }}</a>
     
   </div><!--//item-->
   {% endfor %}
