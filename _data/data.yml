@@ -101,10 +101,12 @@ publications:
       - title: The first Chapter of A book name The 100
         authors: Kass Morgan
         conference: "https://github.com/duongdre/duongdre.github.io"
+        tagline: "The 100"
         
       - title: My Art of An Asia Woman
         authors: Duong Dre
         conference: "https://github.com/duongdre/duongdre.github.io"
+        tagline: "Art"
         
 skills:
     title: Skills &amp; Proficiency
