@@ -89,7 +89,7 @@ projects:
         link: "https://github.com/duongdre/Snake"
         tagline: "Snake"
 
-projects:
+publications:
     title: Publications
     intro: >
         There is one thing that I deeply interest of is creating things. I mean, everything I can. That's one of the reasons which led me to Coding.
@@ -97,14 +97,14 @@ projects:
         Here is some of them
 
 
-    assignments:
+    papers:
       - title: The first Chapter of A book name The 100
+        authors: Kass Morgan
         link: "https://github.com/duongdre/duongdre.github.io"
-        tagline: Kass Morgan
         
       - title: My Art of An Asia Woman
-        link: "https://github.com/duongdre/duongdre.github.io"
-        tagline: Duong Dre
+        authors: Duong Dre
+        conference: [link]
         
 skills:
     title: Skills &amp; Proficiency
