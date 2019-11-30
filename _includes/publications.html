@@ -22,10 +22,8 @@
     <div class="publication-authors">{{ publication.authors }}</div>
     
     {% if publication.tagline %}
-      <span class="publication-tagline">{{ publication.tagline }}</span>
+      <span class="publication-conference">{{ publication.tagline }}</span>
     {% endif %}
-    
-    <a href="{{ publication.conference }}">{{ publication.tagline }}</a>
     
   </div><!--//item-->
   {% endfor %}
