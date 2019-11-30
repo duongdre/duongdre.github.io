@@ -52,7 +52,7 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Bartender at Ciel de Paris
+      ...
 
 education:
     - degree: 
@@ -66,14 +66,14 @@ experiences:
       company: 
       details: |
 
-          - Bullet point
+          - ...
 
     - role: 
       time: 
       company: 
       details: |
 
-          - Bullet point
+          - ...
 
 projects:
     title: Projects
