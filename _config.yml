@@ -2,10 +2,10 @@
 
 # Site Settings
 title: Duong Dre
-url: ''
-baseurl: '' #change it according to your repository name
+url: 'https://www.facebook.com/BMKDuongDre'
+baseurl: 'CV' #change it according to your repository name
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
-theme_skin: turquoise # blue turquoise green berry orange ceramic
+theme_skin: orange # blue turquoise green berry orange ceramic
 
 # Tracker
 analytics: UA-83979019-1
