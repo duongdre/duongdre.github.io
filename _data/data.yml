@@ -3,18 +3,18 @@
 #
 
 sidebar:
-    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    about: False 
+    education: True 
 
     # Profile information
     name: Duong Dre
     tagline: 
-    avatar: a.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: a.jpg
 
     # Sidebar links
     email: duongdre@gmail.com
     phone: 0348 949 696
-    website:  #do not add http://
+    website:
     linkedin: 
     github: duongdre
     gitlab:
@@ -85,6 +85,11 @@ projects:
         link: "https://github.com/duongdre/duongdre.github.io"
         tagline: "Curriculum Vitae"
 
+      - title: C.I.U.
+        link: "https://github.com/duongdre/ChatItUp"
+        tagline: "Chat It Up"
+        
+        
       - title: Snake
         link: "https://github.com/duongdre/Snake"
         tagline: "Snake"
