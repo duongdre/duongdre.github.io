@@ -101,16 +101,16 @@ publications:
 
 
     papers:
-      - title: The first Chapter of A book name The 100
+      - title: The First Chapter of A Book name "The 100"
         authors: Kass Morgan
-        conference: "https://github.com/duongdre/duongdre.github.io"
+        conference: "https://drive.google.com/open?id=1EvDbs4Am1x_a2x460TlBLy1e3ZVc-QLa"
         tagline: "The 100"
         tag: "READ HERE"
         
-      - title: My Art of An Asia Woman
+      - title: Some of My Artworks
         authors: Duong Dre
-        conference: "https://github.com/duongdre/duongdre.github.io"
-        tagline: "My Art"
+        conference: "https://drive.google.com/open?id=1Z0M0lj8956E8VBpALAbwmedCIYPK6Sjs"
+        tagline: "My Artworks"
         tag: "SEE HERE"
         
 skills:
