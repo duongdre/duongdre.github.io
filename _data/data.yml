@@ -37,16 +37,16 @@ sidebar:
         level: BSK 2
         
     interests:
-      - item: Reading
+      - item: <i class="fas fa-heart"></i> Reading
         link:
 
-      - item: Translating books
+      - item: <i class="fas fa-heart"></i> Translating books
         link:
 
-      - item: Painting
+      - item: <i class="fas fa-heart"></i> Painting
         link:
 
-      - item: Traveling
+      - item: <i class="fas fa-heart"></i> Traveling
         link:
 
 career-profile:
@@ -135,4 +135,4 @@ skills:
         level: 75%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://facebook.com/BMKDuongDre" target="_blank" rel="nofollow">Duong Dre</a>
+    <a href="http://facebook.com/BMKDuongDre" target="_blank" rel="nofollow">Duong Dre</a>
