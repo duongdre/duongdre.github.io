@@ -28,7 +28,7 @@ sidebar:
         level: Native
 
       - idiom: English
-        level: Intermediate
+        level: Upper Intermediate
 
       - idiom: Japanese
         level: N4
@@ -81,10 +81,6 @@ projects:
       Here is some of my Projects
 
     assignments:
-      - title: CV
-        link: "https://github.com/duongdre/duongdre.github.io"
-        tagline: "Curriculum Vitae"
-
       - title: C.I.U.
         link: "https://github.com/duongdre/ChatItUp"
         tagline: "Chat It Up"
@@ -122,8 +118,6 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Pascal
-        level: 15%
 
       - name: Python    
         level: 33%
