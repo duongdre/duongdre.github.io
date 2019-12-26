@@ -81,10 +81,13 @@ projects:
       Here is some of my Projects
 
     assignments:
+      - title: StaticWeb
+        link: "https://github.com/duongdre/duongdre.github.io"
+        tagline: "Static Web"
+        
       - title: C.I.U.
         link: "https://github.com/duongdre/ChatItUp"
         tagline: "Chat It Up"
-        
         
       - title: Snake
         link: "https://github.com/duongdre/Snake"
