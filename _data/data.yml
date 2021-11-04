@@ -1,0 +1,135 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output. 
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Duong Dre
+    tagline: 
+    avatar: a.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: duongdre@gmail.com
+    phone: 0348 949 696
+    website:
+    linkedin: 
+    github: duongdre
+    gitlab:
+    bitbucket:
+    facebook: BMKDuongDre
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+
+    languages:
+      - idiom: Vietnamsese
+        level: Native
+
+      - idiom: English
+        level: Upper Intermediate
+
+      - idiom: Japanese
+        level: N4
+        
+      - idiom: Chinese
+        level: BSK 2
+        
+    interests:
+      - item: <i class="fas fa-heart"></i> Reading
+        link:
+
+      - item: <i class="fas fa-heart"></i> Translating books
+        link:
+
+      - item: <i class="fas fa-heart"></i> Painting
+        link:
+
+      - item: <i class="fas fa-heart"></i> Traveling
+        link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      ...
+
+education:
+    - degree: 
+      university: Thang Long University
+      time: 2017 - present
+      details: |
+
+experiences:
+    - role: 
+      time: 
+      company: 
+      details: |
+
+          - ...
+
+    - role: 
+      time: 
+      company: 
+      details: |
+
+          - ...
+
+projects:
+    title: Projects
+    intro: >
+      Here is some of my Projects
+
+    assignments:
+      - title: StaticWeb
+        link: "https://github.com/duongdre/duongdre.github.io"
+        tagline: "Static Web"
+        
+      - title: C.I.U.
+        link: "https://github.com/duongdre/ChatItUp"
+        tagline: "Chat It Up"
+        
+      - title: Snake
+        link: "https://github.com/duongdre/Snake"
+        tagline: "Snake"
+
+publications:
+    title: Publications
+    intro: |
+        There are many things that made me who I am. One of them is curiously, which made me churn intricate thoughts all the time.
+        Hence, I love to inventing new things. And I think I am good at it.
+        
+        It is my passway to Coding. Besides that, I also Painting and Translating books when I have free time.
+        
+        Here is some of them.
+
+
+    papers:
+      - title: The First Chapter of A Book name "The 100"
+        authors: Kass Morgan
+        conference: "https://drive.google.com/open?id=1EvDbs4Am1x_a2x460TlBLy1e3ZVc-QLa"
+        tagline: "The 100"
+        tag: "READ HERE"
+        
+      - title: Some of My Artworks
+        authors: Duong Dre
+        conference: "https://drive.google.com/open?id=1Z0M0lj8956E8VBpALAbwmedCIYPK6Sjs"
+        tagline: "My Artworks"
+        tag: "SEE HERE"
+        
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+
+      - name: Python    
+        level: 43%
+  
+      - name: Java 
+        level: 75%
+
+      - name: Kotlin
+        level: 80%
+
+footer: >
+    <a href="http://facebook.com/BMKDuongDre" target="_blank" rel="nofollow">Duong Dre</a>
