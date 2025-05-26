@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duong Nguyen Anh - Mobile Developer Portfolio</title>
+    <meta name="description" content="Duong Nguyen Anh - Mobile Engineer at RikkeiSoft specializing in Flutter, Android, Blockchain, and Deep Learning. Based in Hanoi, Vietnam.">
+    <meta name="keywords" content="Flutter Developer, Mobile Engineer, Android Developer, Blockchain Developer, Solidity, Kotlin, RikkeiSoft, Vietnam">
+    <meta name="author" content="Duong Nguyen Anh">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Duong Nguyen Anh - Mobile Developer Portfolio">
+    <meta property="og:description" content="Mobile Engineer at RikkeiSoft specializing in Flutter, Android, Blockchain, and Deep Learning">
+    <meta property="og:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e983acbc-8495-440e-b2da-24e729e0430a.jpg-xrtssxDDvQGmgAPpg2vhNoUOeZAk1Y.jpeg">
+    <meta property="og:url" content="https://duongdre.github.io">
+    <meta property="og:type" content="website">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e293b;
+            --secondary-color: #3b82f6;
+            --accent-color: #06b6d4;
+            --emerald-500: #10b981;
+            --emerald-600: #059669;
+            --teal-500: #14b8a6;
+            --teal-600: #0d9488;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --border-color: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 50%, #dbeafe 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--secondary-color), #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .mobile-nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-lg);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .mobile-nav.active {
+            display: block;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav a:hover {
+            color: var(--secondary-color);
+            background: #dbeafe;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #8b5cf6 50%, #4338ca 100%);
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=');
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 0 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .avatar-container {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .avatar {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            box-shadow: var(--shadow-2xl);
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .avatar::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            opacity: 0.95;
+        }
+
+        .hero .company {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            opacity: 0.85;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+
+        .hero .tagline {
+            font-size: clamp(1rem, 3vw, 1.125rem);
+            opacity: 0.85;
+            margin-bottom: 2.5rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            position: relative;
+            z-index: 20;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            cursor: pointer;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 25;
+            min-width: 200px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--emerald-500), var(--teal-500));
+            color: white;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+            border: 2px solid transparent;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--emerald-600), var(--teal-600));
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            z-index: 15;
+        }
+
+        .scroll-indicator div {
+            width: 1.5rem;
+            height: 2.5rem;
+            border: 2px solid white;
+            border-radius: 1.25rem;
+            display: flex;
+            justify-content: center;
+            padding-top: 0.5rem;
+        }
+
+        .scroll-indicator div::after {
+            content: '';
+            width: 0.25rem;
+            height: 0.75rem;
+            background: white;
+            border-radius: 0.125rem;
+            animation: pulse 2s infinite;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-divider {
+            width: 6rem;
+            height: 0.25rem;
+            background: linear-gradient(135deg, var(--secondary-color), #8b5cf6);
+            margin: 0 auto 3rem;
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        .about-card {
+            background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+            border-radius: 1.5rem;
+            padding: 3rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
+        .tech-item {
+            background: white;
+            color: var(--secondary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-weight: 500;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .tech-item:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Experience Section */
+        .experience {
+            background: linear-gradient(135deg, #f1f5f9 0%, #dbeafe 100%);
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .experience-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        .experience-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-company {
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-duration {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills {
+            background: white;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            transition: all 0.5s ease;
+            border: 1px solid transparent;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--secondary-color);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: scale(1.1);
+        }
+
+        .skill-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .skill-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background: linear-gradient(135deg, #f1f5f9 0%, #dbeafe 100%);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.5s ease;
+            border: 1px solid transparent;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--secondary-color);
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+
+        .project-card:hover .project-title {
+            color: var(--secondary-color);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: #f1f5f9;
+            color: var(--secondary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .tech-tag:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .project-link:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 32rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, var(--emerald-500), var(--teal-500));
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.25rem;
+        }
+
+        .social-link:hover {
+            background: linear-gradient(135deg, var(--emerald-600), var(--teal-600));
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer p {
+            color: #94a3b8;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40%, 43% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            70% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+            90% {
+                transform: translateX(-50%) translateY(-2px);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Responsive Design */
+        @media (min-width: 640px) {
+            .cta-buttons {
+                flex-direction: row;
+            }
+
+            .about-flex {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .about-text {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                padding: 2rem 0;
+            }
+
+            .avatar {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .about-card {
+                padding: 2rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+
+            .about-card {
+                padding: 1.5rem;
+            }
+
+            .skill-card {
+                padding: 1.5rem;
+            }
+
+            .project-content {
+                padding: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.875rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">Duong Nguyen Anh</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <div class="avatar">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e983acbc-8495-440e-b2da-24e729e0430a.jpg-xrtssxDDvQGmgAPpg2vhNoUOeZAk1Y.jpeg" alt="Duong Nguyen Anh" />
+                </div>
+            </div>
+            <h1>Duong Nguyen Anh</h1>
+            <p class="subtitle">Mobile Engineer</p>
+            <p class="company">@ RikkeiSoft • Hanoi, Vietnam</p>
+            <p class="tagline">A never stop trying loser who believes in creating a better world through technology. Specializing in Mobile App Development, Deep Learning, and Blockchain solutions.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#portfolio" class="btn btn-outline">View My Work</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Mobile Engineer passionate about creating innovative solutions</p>
+            <div class="section-divider"></div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-flex">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/e983acbc-8495-440e-b2da-24e729e0430a.jpg-xrtssxDDvQGmgAPpg2vhNoUOeZAk1Y.jpeg" alt="Duong Nguyen Anh" class="about-avatar" />
+                        <div>
+                            <p class="about-text">
+                                I'm Duong Nguyen Anh (duongdre), a passionate Mobile Engineer currently working at RikkeiSoft in Hanoi, Vietnam. I specialize in mobile app development with a focus on creating high-quality, user-friendly applications that make a real difference.
+                            </p>
+                            <p class="about-text">
+                                Beyond mobile development, I'm actively exploring Deep Learning and Blockchain technologies. My goal is simple yet ambitious: "Being better to create a better world." I believe in continuous learning and never giving up, which drives me to constantly improve my skills and tackle new challenges.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">72</span>
+                            <span class="stat-label">GitHub Contributions</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">16</span>
+                            <span class="stat-label">Public Repositories</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8</span>
+                            <span class="stat-label">GitHub Followers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Following</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-item">Flutter</span>
+                        <span class="tech-item">Solidity</span>
+                        <span class="tech-item">Kotlin</span>
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">C++</span>
+                        <span class="tech-item">Mobile Development</span>
+                        <span class="tech-item">Deep Learning</span>
+                        <span class="tech-item">Blockchain</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">Building innovative mobile solutions at leading tech companies</p>
+            <div class="section-divider"></div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3 class="experience-title">Mobile Engineer</h3>
+                    <p class="experience-company">RikkeiSoft</p>
+                    <p class="experience-duration">Current Position • Hanoi, Vietnam</p>
+                    <p class="experience-description">
+                        Working as a Mobile Engineer at RikkeiSoft, developing cutting-edge mobile applications using Flutter and native technologies. Contributing to various client projects and internal products while maintaining high code quality and performance standards.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-title">Deep Learning Research</h3>
+                    <p class="experience-company">Personal Projects</p>
+                    <p class="experience-duration">Ongoing</p>
+                    <p class="experience-description">
+                        Actively researching and implementing Deep Learning solutions, exploring applications in mobile development and creating intelligent features for mobile applications.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="experience-title">Blockchain Development</h3>
+                    <p class="experience-company">Personal Projects</p>
+                    <p class="experience-duration">Ongoing</p>
+                    <p class="experience-description">
+                        Developing blockchain solutions using Solidity, creating smart contracts and exploring decentralized applications (dApps) with mobile interfaces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Expertise across mobile development and emerging technologies</p>
+            <div class="section-divider"></div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="skill-title">Flutter Development</h3>
+                    <p class="skill-description">Expert in Flutter framework for cross-platform mobile development. Creating beautiful, performant applications with modern UI/UX design principles.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3 class="skill-title">Android Development</h3>
+                    <p class="skill-description">Native Android development using Kotlin and Java. Experienced with Android SDK, Material Design, and modern Android architecture patterns.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="skill-title">Blockchain & Solidity</h3>
+                    <p class="skill-description">Smart contract development using Solidity. Building decentralized applications and exploring blockchain integration with mobile platforms.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-title">Deep Learning</h3>
+                    <p class="skill-description">Researching and implementing Deep Learning solutions, with focus on mobile AI applications and intelligent user experiences.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Programming Languages</h3>
+                    <p class="skill-description">Proficient in multiple programming languages including Kotlin, Java, C++, Dart, and Solidity for various development needs.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="skill-title">Software Development</h3>
+                    <p class="skill-description">Full-stack software development with focus on mobile applications, clean architecture, and maintainable code practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my work from GitHub repositories</p>
+            <div class="section-divider"></div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Tracking VN Application</h3>
+                        <p class="project-description">
+                            An internship project focused on tracking applications in Vietnam. Built using Java, this project demonstrates backend development skills and application monitoring capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Backend</span>
+                            <span class="tech-tag">Tracking</span>
+                            <span class="tech-tag">Internship</span>
+                        </div>
+                        <a href="https://github.com/duongdre/tracking-vn-application-as-intern" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">ChatItUp</h3>
+                        <p class="project-description">
+                            An emulation of a messaging application built with Java. This project showcases real-time communication features and demonstrates proficiency in building chat applications.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Chat Application</span>
+                            <span class="tech-tag">Real-time</span>
+                            <span class="tech-tag">Messaging</span>
+                        </div>
+                        <a href="https://github.com/duongdre/ChatItUp" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Snake Game</h3>
+                        <p class="project-description">
+                            A classic Snake game implementation in C++ created as a learning project. This project demonstrates C++ programming skills and game development fundamentals.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Game Development</span>
+                            <span class="tech-tag">Learning Project</span>
+                            <span class="tech-tag">Console Game</span>
+                        </div>
+                        <a href="https://github.com/duongdre/Snake" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and create something amazing together</p>
+            <div class="section-divider"></div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in discussing new opportunities, collaborating on exciting projects, or simply connecting with fellow developers. Based in Hanoi, Vietnam, I'm open to both local and remote opportunities.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/duongdre" class="social-link" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dev-duong-nguyenanh/" class="social-link" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/BMKDuongDre/" class="social-link" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="mailto:dev.duong.nguyenanh@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Duong Nguyen Anh. All rights reserved. "A never stop trying loser" creating a better world.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileMenuIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            if (mobileNav.classList.contains('active')) {
+                mobileMenuIcon.className = 'fas fa-times';
+            } else {
+                mobileMenuIcon.className = 'fas fa-bars';
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = mobileNav.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+                mobileMenuIcon.className = 'fas fa-bars';
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.skill-card, .project-card, .about-card, .experience-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Counter animation for stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 50;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats-grid');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+    </script>
+</body>
+</html>
