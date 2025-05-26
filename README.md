@@ -1,54 +1,80 @@
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/). 
-> Visit her [website](http://themes.3rdwavemedia.com/) for more themes.
+Thank you for the clarification!
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](http://webjeda.com/online-cv/).
+Here’s a **README.md** file specifically for the **HTML/CSS portfolio project** itself — useful if you're hosting the code on GitHub or any repo, showcasing it as a standalone website project.
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+---
 
-## Installation
+```markdown
+# 💼 Personal Portfolio Website
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository
-* Go to settings and set Github Pages source as master.
-* Your new site should be ready at `https://username.github.io/online-cv/`
+This is a responsive and professional personal portfolio website built with HTML and CSS. It introduces and promotes my expertise as a **mobile developer** and **blockchain engineer**.
 
-Change all the details from one place: ``_data/data.yml``
+## 🔧 Technologies Used
 
-Watch my [video](https://www.youtube.com/embed/T2nx6tj-ZH4) on installation.
+- **HTML5** – Semantic structure
+- **CSS3** – Responsive layout using Flexbox and Grid
+- **Google Fonts** – For clean, modern typography
+- *(Optional)* Font Awesome – For icons (if included)
 
-## Skins
+## 📄 Project Structure
 
-There are 6 color schemes available:
+```
 
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="/assets/images/blue.jpg" width="300"/> | <img src="/assets/images/turquoise.jpg" width="300"/> | <img src="/assets/images/green.jpg" width="300"/> |
+/
+├── index.html        # Main HTML file
+├── style.css         # CSS styling file (optional if inline)
+└── assets/           # (Optional) folder for images or icons
 
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="/assets/images/berry.jpg" width="300"/> | <img src="/assets/images/orange.jpg" width="300"/> | <img src="/assets/images/ceramic.jpg" width="300"/> |
+````
 
-## Credits
+## 🧑‍💻 About
 
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
+This site highlights:
 
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
+- A professional **introduction** and **tagline**
+- A detailed **About Me** section
+- A **Skills** section (Flutter, Android, iOS, Solidity, etc.)
+- A **Projects** or **Portfolio** showcase
+- A **Contact** form or links
+- A clean and minimal **footer**
 
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
+## 🚀 Getting Started
 
-## License
+To view or edit the website locally:
 
-This project is licensed under the [MIT license](LICENSE.txt).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+````
+
+2. Open `index.html` in your browser:
+
+   ```bash
+   open index.html
+   ```
+
+## 📦 Deployment
+
+You can deploy this website using:
+
+* GitHub Pages
+* Vercel
+* Netlify
+* Firebase Hosting
+
+## ✍️ Author
+
+**Duong Dre**
+Mobile & Blockchain Developer
+[LinkedIn](https://linkedin.com/in/yourprofile) • [GitHub](https://github.com/yourusername) • [Email](mailto:your@email.com)
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+```
+
+---
+
+Let me know if you want it to match a specific folder structure (e.g. with a `/css/`, `/img/`, or `/components/` directory), or want to add a deploy button or badge for GitHub Pages.
+```
